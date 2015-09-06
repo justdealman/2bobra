@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 	<!--<link href="./favicon.ico" rel="shortcut icon">-->
 	<link href="./css/style.css" rel="stylesheet">
+	<link href="./fancybox/style.css" rel="stylesheet">
 	<script src="./js/jquery.js"></script>
 	<!--[if IE 8]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,8 +75,13 @@
 					<ul>
 						<li>
 							<div>
-								<img src="./pic/cont1.jpg" width="389" height="258" class="cover" alt="">
-								<h4><a href="#">Салон «Волховец» Фирменный салон</a></h4>
+								<div class="cover">
+									<a href="./pic/cont01.jpg" class="zoom" rel="g1"><img src="./pic/cont01.jpg" width="389" height="258" data-img="1" alt=""></a>
+									<a href="./pic/cont02.jpg" class="zoom" rel="g1"><img src="./pic/cont02.jpg" width="389" height="258" data-img="2" alt=""></a>
+									<a href="./pic/cont03.jpg" class="zoom" rel="g1"><img src="./pic/cont03.jpg" width="389" height="258" data-img="3" alt=""></a>
+									<a href="./pic/cont04.jpg" class="zoom" rel="g1"><img src="./pic/cont04.jpg" width="389" height="258" data-img="4" alt=""></a>
+								</div>
+								<h4>Салон «Волховец» Фирменный салон</h4>
 								<img src="./img/firm3.png" width="125" height="45" class="logo" alt="">
 								<ul>
 									<li>
@@ -96,8 +102,10 @@
 						</li>
 						<li>
 							<div>
-								<img src="./pic/cont2.jpg" width="389" height="258" class="cover" alt="">
-								<h4><a href="#">Салон «Union-Итальянские двери» Фирменный салон</a></h4>
+								<div class="cover">
+									<a href="./pic/cont2.jpg" class="zoom" rel="g2"><img src="./pic/cont2.jpg" width="389" height="258" alt=""></a>
+								</div>
+								<h4>Салон «Union-Итальянские двери» Фирменный салон</h4>
 								<img src="./img/firm1.png" width="108" height="38" class="logo" alt="">
 								<ul>
 									<li>
@@ -118,8 +126,10 @@
 						</li>
 						<li>
 							<div>
-								<img src="./pic/cont3.jpg" width="389" height="258" class="cover" alt="">
-								<h4><a href="#">Салон «2 бобра» Галерея дверей</a></h4>
+								<div class="cover">
+									<a href="./pic/cont3.jpg" class="zoom" rel="g3"><img src="./pic/cont3.jpg" width="389" height="258" alt=""></a>
+								</div>
+								<h4>Салон «2 бобра» Галерея дверей</h4>
 								<img src="./img/firm5.png" width="103" height="34" class="logo" alt="">
 								<ul>
 									<li>
@@ -174,10 +184,10 @@
 				</ul>
 				<div class="form">
 					<h5>вызов менеджера<br> по замеру</h5>
-					<p><input type="text" value="Алексей"></p>
-					<p><input type="text" value="Ваш телефон"></p>
-					<p><input type="text" value="Ваш адрес"></p>
-					<p><input type="text" value="Модель двери"></p>
+					<p><input type="text" placeholder="Ваше имя"></p>
+					<p><input type="text" placeholder="Ваш телефон"></p>
+					<p><input type="text" placeholder="Ваш адрес"></p>
+					<p><input type="text" placeholder="Модель двери"></p>
 					<button>Вызвать</button>
 				</div>
 				<div class="rate">
@@ -254,6 +264,7 @@
 		<li><a href="#">Где купить</a></li>
 	</ul>
 	<script src="./js/jcarousel.js"></script>
+	<script src="./fancybox/script.js"></script>
 	<script src="./js/dynamic.js"></script>
 </body>
 </html>

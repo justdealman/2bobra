@@ -88,7 +88,7 @@ a {
 	text-decoration:none;
 }
 a:hover {
-	text-decoration:none;
+	text-decoration:underline;
 }
 form {
 	margin:0;
@@ -112,7 +112,7 @@ ol li {
 	padding:0 0 0 16px;
 }
 input, select, textarea {
-	color:#000000;
+	color:#2b2a29;
 	font-size:12px;
     font-family:'Roboto', sans-serif;
 	padding:0;
@@ -197,9 +197,11 @@ header .nav li a {
 }
 header .nav li.active a {
 	color:#637dbd;
+	text-decoration:none;
 }
 header .nav li a:hover {
 	color:#ffffff;
+	text-decoration:none;
 	background:#637dbd;
 }
 header .nav li.config a {
@@ -302,6 +304,7 @@ header .contacts p {
 }
 .lb .form p input {
 	width:100%;
+	color:#2b2a29;
 	font-size:13px;
 	font-weight:300;
 	padding:7px 8px;
@@ -309,7 +312,6 @@ header .contacts p {
 	border:1px solid #b0b0b0;
 }
 .lb .form p input:focus {
-	color:#637dbd;
 	border:1px solid #637dbd;
 }
 .lb .form button {
@@ -326,6 +328,10 @@ header .contacts p {
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
+}
+.lb .form button:hover {
+	color:#ffffff;
+	background:#637dbd;
 }
 .lb .rate {
 	text-align:center;
@@ -358,6 +364,7 @@ header .contacts p {
 .lb .rate p a:hover {
 	color:#637dbd;
 	text-decoration:underline;
+	background-position:center -100px;
 }
 .rb {
 	float:right;
@@ -379,7 +386,11 @@ header .contacts p {
 	float:left;
 	width:50%;
 }
-.rb .banner > div > div {
+.rb .banner > div > a, .rb .banner > div > span {
+	display:block;
+	color:#2b2a29;
+}
+.rb .banner > div > * > div {
 	position:absolute;
 	left:20px;
 	bottom:14px;
@@ -390,7 +401,8 @@ header .contacts p {
 .rb .banner .full h5 {
 	font-size:52px;
 	line-height:48px;
-	margin:0 0 4px;
+	padding:0;
+	margin:0;
 }
 .rb .banner .full h5 span {
 	display:inline-block;
@@ -437,12 +449,8 @@ header .contacts p {
 	border-bottom:2px solid #f0efef;
 }
 .rb .banner h6 a {
-	text-decoration:underline;
 	padding:0 9px 0 0;
 	background:url('../img/more_icon.png') no-repeat right 6px;
-}
-.rb .banner h6 a:hover {
-	text-decoration:none;
 }
 .rb .banner h6:last-of-type {
 	padding-bottom:0;
@@ -469,12 +477,8 @@ header .contacts p {
 	margin:0 0 10px;
 }
 .rb .index h6 a {
-	text-decoration:underline;
 	padding:0 9px 0 0;
 	background:url('../img/more_icon.png') no-repeat right 6px;
-}
-.rb .index h6 a:hover {
-	text-decoration:none;
 }
 .rb .index .lc {
 	float:left;
@@ -575,12 +579,6 @@ header .contacts p {
 }
 .navigation ul li {
 	text-align:left;
-}
-.navigation ul li p a {
-	text-decoration:underline;
-}
-.navigation ul li p a:hover {
-	text-decoration:none;
 }
 .navigation ul .col1 {
 	float:left;
@@ -749,12 +747,6 @@ header .open {
 .breadcrumbs li:last-child:after {
 	display:none;
 }
-.breadcrumbs li a {
-	text-decoration:underline;
-}
-.breadcrumbs li a:hover {
-	text-decoration:none;
-}
 h1 {
 	position:relative;
 	font-size:15px;
@@ -802,12 +794,6 @@ h1 span {
 	line-height:17px;
 	font-weight:300;
 	margin:0 0 17px;
-}
-.actions a {
-	text-decoration:underline;
-}
-.actions a:hover {
-	text-decoration:none;
 }
 .actions .nav {
 	clear:both;
@@ -875,18 +861,11 @@ h1 span {
 	width:106px;
 	height:auto;
 }
-.collection li a {
-	text-decoration:underline;
-}
-.collection li a:hover {
-	text-decoration:none;
-}
 .collection li h5 {
 	position:relative;
 	z-index:2;
 	font-size:14px;
 	line-height:17px;
-	font-weight:300;
 	padding:0;
 	margin:0 0 5px;
 }
@@ -897,7 +876,7 @@ h1 span {
 	margin:0 0 2px;
 }
 .collection li p span {
-	font-weight:500;
+	font-weight:bold;
 }
 .collection li p s {
 	color:#6a6a6a;
@@ -956,12 +935,6 @@ h1 span {
 }
 .franchise {
 	margin:22px 0 20px;
-}
-.franchise a {
-	text-decoration:underline;
-}
-.franchise a:hover {
-	text-decoration:none;
 }
 .franchise > ul {
 	margin:0 0 20px;
@@ -1112,6 +1085,7 @@ h1 span {
 }
 .rb .pagination ul li a:hover {
 	color:#ffffff;
+	text-decoration:none;
 	background:#637dbd;
 	border:1px solid #637dbd;
 }
@@ -1166,11 +1140,17 @@ h1 span {
 }
 .categories > div .rc {
 	float:right;
-	width:188px;
-	color:#ffffff;
-	padding:10px 15px 5px;
+	width:218px;
 	margin:3px 0 0;
 	background:#637dbd;
+}
+.categories > div .rc a {
+	display:block;
+	color:#ffffff;
+	padding:10px 15px 5px;
+}
+.categories > div .rc a:hover {
+	text-decoration:none;
 }
 .categories > div .rc h5 {
 	font-size:17px;
@@ -1185,12 +1165,8 @@ h1 span {
 	font-weight:300;
 	margin:0 0 8px;
 }
-.categories > div .rc p a {
-	color:#ffffff;
+.categories > div .rc a:hover p {
 	text-decoration:underline;
-}
-.categories > div .rc p a:hover {
-	text-decoration:none;
 }
 .categories > div .rc p span {
 	font-weight:500;
@@ -1408,12 +1384,8 @@ h1 span {
 }
 .services .price a {
 	display:inline-block;
-	text-decoration:underline;
 	padding:4px 2px 4px 30px;
 	background:url('../img/price_icon.png') no-repeat left top;
-}
-.services .price a:hover {
-	text-decoration:none;
 }
 .services div.guarantee {
 	display:none;
@@ -1466,24 +1438,48 @@ h1 span {
 	padding:0 0 0 410px;
 	margin:0 0 14px;
 }
-.rb .contacts > ul > li > div img.cover {
+.rb .contacts > ul > li > div .cover {
+	position:relative;
 	float:left;
 	width:389px;
 	height:auto;
 	margin:2px 0 0 -410px;
 }
+.rb .contacts > ul > li > div .cover img{
+	position:relative;
+}
+.rb .contacts > ul > li > div .cover .prev, .rb .contacts > ul > li > div .cover .next {
+	position:absolute;
+	top:50%;
+	width:23px;
+	height:34px;
+	z-index:10;
+	display:block;
+	cursor:pointer;
+	margin-top:-18px;
+	opacity:0;
+}
+.rb .contacts > ul > li > div .cover .prev {
+	left:6px;
+	background:url('../img/white_arrows.png') no-repeat left top;
+}
+.rb .contacts > ul > li > div .cover .next {
+	right:6px;
+	background:url('../img/white_arrows.png') no-repeat -23px top;
+}
+.rb .contacts > ul > li > div .cover:hover .prev, .rb .contacts > ul > li > div .cover:hover .next {
+	opacity:1;
+}
 .rb .contacts > ul > li > div img.logo {
 	margin:-7px 0 1px;
 }
 .rb .contacts > ul > li > div h4 {
+	color:#637dbd;
 	font-size:14px;
 	line-height:16px;
 	font-weight:500;
 	padding:0;
 	margin:0 0 10px;
-}
-.rb .contacts > ul > li > div h4 a:hover {
-	text-decoration:underline;
 }
 .rb .contacts > ul > li > div ul {
 	margin:0;
@@ -1550,7 +1546,6 @@ h1 span {
 	border:1px solid #b0b0b0;
 }
 .rb .contacts .form p input:focus, .rb .contacts .form p textarea:focus {
-	color:#637dbd;
 	border:1px solid #637dbd;
 }
 .rb .contacts .form p textarea {
@@ -1593,6 +1588,10 @@ h1 span {
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
+}
+.rb .contacts .form button:hover {
+	color:#ffffff;
+	background:#6b6b6b;
 }
 .rb .contacts > ul > li > p {
 	font-size:14px;
@@ -1710,6 +1709,10 @@ h1 span {
 	-moz-border-radius:3px;
 	border-radius:3px;
 }
+.modal .form button:hover {
+	color:#ffffff;
+	background:#637dbd;
+}
 .modal.item > div .form {
 	float:right;
 	width:344px;
@@ -1824,9 +1827,15 @@ h1 span {
 	left:-26px;
 	background:url('../img/carousel_arrows.png') no-repeat left top;
 }
+.carousel .jcarousel-prev:hover {
+	background-position:left -27px;
+}
 .carousel .jcarousel-next {
 	right:-26px;
 	background:url('../img/carousel_arrows.png') no-repeat -18px top;
+}
+.carousel .jcarousel-next:hover {
+	background-position:-18px -27px;
 }
 .product {
 	clear:both;
@@ -1881,6 +1890,7 @@ h1 span {
 	width:47px;
 	height:47px;
 	vertical-align:top;
+	cursor:pointer;
 	margin:1px 1px 3px 0;
 }
 .product .list li div img {
@@ -1902,6 +1912,7 @@ h1 span {
 }
 .product .more h5 span {
 	color:#637dbd;
+	cursor:pointer;
 	border-bottom:1px dotted #637dbd;
 }
 .product .more h4 {
@@ -1933,6 +1944,10 @@ h1 span {
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
+}
+.product .more button:hover {
+	color:#ffffff;
+	background:#637dbd;
 }
 .product .more .share {
 	margin:0 0 11px;
@@ -1979,6 +1994,37 @@ img.tempimg {
 	-webkit-box-shadow:0 2px 5px rgba(0,0,0,0.33);
 	-moz-box-shadow:0 2px 5px rgba(0,0,0,0.33);
 	box-shadow:0 2px 5px rgba(0,0,0,0.33);
+}
+.complectation-popup {
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:90;
+	width:383px;
+	color:#252525;
+	padding:9px 11px 10px 13px;
+	margin:22px 0 0;
+	background:#f8f8f8;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+	-webkit-box-shadow:0 2px 5px rgba(0,0,0,0.33);
+	-moz-box-shadow:0 2px 5px rgba(0,0,0,0.33);
+	box-shadow:0 2px 5px rgba(0,0,0,0.33);
+}
+.complectation-popup h6 {
+	font-size:13px;
+	line-height:16px;
+	font-weight:500;
+	padding:0;
+	margin:0 0 6px;
+}
+.complectation-popup p {
+	font-size:13px;
+	line-height:16px;
+	font-weight:300;
+	margin:0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -2538,8 +2584,10 @@ img.tempimg {
 		margin:0 0 19px;
 	}
 	.categories > div .rc {
-		padding:11px 15px 4px;
 		margin:-8px 0 0;
+	}
+	.categories > div .rc a {
+		padding:11px 15px 4px;
 	}
 	.categories > div .rc h5 {
 		font-size:19px;
@@ -2735,10 +2783,13 @@ img.tempimg {
 	.product {
 		text-align:center;
 		padding:0;
+		text-align:center;
 		margin:0 10px 3px;
 	}
 	.product .main {
 		position:static;
+		float:none;
+		margin:3px 0 12px;
 	}
 	.product .list {
 		text-align:left;
@@ -2776,6 +2827,22 @@ img.tempimg {
 		display:block;
 		width:100%;
 		margin-right:0 !important;
+	}
+	.complectation-popup {
+		width:calc(100% - 20px);
+	}
+	.complectation-popup h6, .complectation-popup p {
+		font-size:15px;
+		line-height:18px;
+	}
+	.rb .contacts > ul > li > div .cover {
+		float:none;
+		width:auto;
+		margin:0 0 12px;
+	}
+	.rb .contacts > ul > li > div .cover img {
+		width:100%;
+		height:auto;
 	}
 }
 @media screen and (max-width: 1100px) {
